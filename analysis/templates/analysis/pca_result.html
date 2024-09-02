@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>PCA Analysis Results</title>
+</head>
+<body>
+    <h1>主成分分析の結果</h1>
+
+    <h2>寄与率のプロット</h2>
+    <img src="data:image/png;base64,{{ contribution_plot_image }}" alt="Contribution Rate Plot">
+
+    <h2>累積寄与率のプロット</h2>
+    <img src="data:image/png;base64,{{ cumulative_plot_image }}" alt="Cumulative Contribution Rate Plot">
+
+    <h2>カテゴリデータ(目的変数)の主成分散布図</h2>
+    <img src="data:image/png;base64,{{ scatter_plot_image }}" alt="PCA Scatter Plot with Categories">
+
+    <h2>列ラベル(説明変数)の主成分散布図</h2>
+    <img src="data:image/png;base64,{{ scatter_with_labels_plot_image }}" alt="PCA Component Contribution">
+
+</body>
+</html>

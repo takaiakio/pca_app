@@ -1,0 +1,11 @@
+<!-- analysis/pca_analysis.html -->
+<h1>主成分分析データアップロード</h1>
+
+<p>目的変数(カテゴリ)は1列目に設定してください。</p>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="csv_file">CSVファイルを選択してください:</label>
+    <input type="file" name="csv_file" id="csv_file" accept=".csv">
+    <button type="submit">分析開始</button>
+</form>

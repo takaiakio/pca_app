@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pca_app
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn pca_app.wsgi:application
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: django-insecure-fwolyo!-$y=p!yoj!o*5ves=p5f4qs2k)#c_!6_lv(7!rl06q6
+      - key: DATABASE_URL
+        value: <Your-Database-URL>
